@@ -1,0 +1,18 @@
+{
+    "providerId": "platform.sh",
+    "providerName": "Platform.sh",
+    "serviceId": "alias",
+    "serviceName": "Platform.sh The end-to-end web platform for agile teams",
+    "version": 2,
+    "logoUrl": "https://platform.sh/logos/redesign/Platformsh_logo_black@2x.png",
+    "description": "Configure domain record for  non-standard ALIAS entry.",
+    "variableDescription": "edge_hostname is the host name of the edge server for your Platform.sh project.",
+    "records": [
+        {
+            "type": "ALIAS",
+            "host": "@",
+            "pointsTo": "%edge_hostname%",
+            "ttl": "3600"
+        }
+    ]
+}
